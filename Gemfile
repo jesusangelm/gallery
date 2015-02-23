@@ -13,6 +13,7 @@ gem 'puma', '~> 2.11.1'
 gem 'quiet_assets', '~> 1.1.0'
 gem 'bootstrap-sass', '~> 3.3.3'
 gem 'slim-rails', '~> 3.0.1'
+gem 'pg', '~> 0.18.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
