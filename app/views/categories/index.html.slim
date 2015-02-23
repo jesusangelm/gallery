@@ -1,4 +1,8 @@
 h1 Categoria de Imagenes
-
-- @categories.each do |category|
-  p= link_to category.name, category
+#pins.transitions-enabled
+  - @categories.each do |category|
+    .box.panel.panel-default
+      - if category.pictures.empty?
+        = image_tag "empty_gallery.png"
+      - else
+        p= link_to category.name, category

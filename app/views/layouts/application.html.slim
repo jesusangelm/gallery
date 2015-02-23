@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title ArtesaniaSory
+    = stylesheet_link_tag    'application', media: 'all'
+    = javascript_include_tag 'application'
+    = csrf_meta_tags
+  body
+    nav.navbar.navbar-default
+      .container
+        .navbar-brand= link_to "ArtesaniaSory", root_path
+
+    .container
+      - flash.each do |name, msg|
+        = content_tag :div, msg, class: "alert alert-info"
+
+    .container
+      = yield
+
