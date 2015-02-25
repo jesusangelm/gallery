@@ -6,9 +6,10 @@ html
     = javascript_include_tag 'application'
     = csrf_meta_tags
   body
-    nav.navbar.navbar-default
+    .jumbotron
       .container
-        .navbar-brand= link_to "ArtesaniaSory", root_path
+        h1 = link_to "ArtesaniaSory", root_path
+        p Manualidades, Tejidos, Lenceria y mucho mas...
 
     .container
       - flash.each do |name, msg|
