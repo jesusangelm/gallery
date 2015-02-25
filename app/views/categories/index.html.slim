@@ -5,4 +5,12 @@ h1 Categoria de Imagenes
       - if category.pictures.empty?
         = image_tag "empty_gallery.png"
       - else
-        p= link_to category.name, category
+        p= link_to (image_tag category.pictures.last.image.url), category
+      .panel-body
+        h2= link_to category.name, category
+        p.user
+          | Descripcion:
+          = category.desc
+          br
+          | Imagenes:
+          = category.pictures.count

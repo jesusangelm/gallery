@@ -1,5 +1,11 @@
-h1 = "Imagenes de la categoria #{@category.name}"
+#pins.transitions-enabled
+  - @pictures.each do |picture|
+    .box.panel.panel-default
+      = link_to (image_tag picture.image.url), category_picture_path(@category, picture)
+      .panel-body
+        h2= link_to picture.title, category_picture_path(@category, picture)
+        p.user
+          | Descripcion:
+          = picture.desc
 
-- @pictures.each do |picture|
-  p= link_to picture.title, category_picture_path(@category, picture)
-  p= picture.desc
+

@@ -1,3 +1,13 @@
-h1 Imagen
-p = @picture.title
-p = @picture.desc
+#pin_show.row
+  .col-md-8.col-md-offset-2
+    .panel.panel-default
+      .panel-heading.pin_image
+        = image_tag @picture.image.url
+      .panel-body
+        h1 = @picture.title
+        p.description = @picture.desc
+      .panel-footer
+        .row
+          .col-md-6
+
+
