@@ -17,6 +17,7 @@ gem 'pg', '~> 0.18.1'
 gem 'activeadmin', github: 'activeadmin'
 gem 'devise', '~> 3.4.1'
 gem 'carrierwave', '~> 0.10.0'
+gem 'fog', '~> 1.28.0'
 gem 'masonry-rails', '~> 0.2.4'
 
 group :development, :test do
@@ -32,4 +33,5 @@ end
 
 group :development do
   gem 'pry-rails', '~> 0.3.3'
+  gem 'dotenv-rails', '~> 1.0.2'
 end

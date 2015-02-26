@@ -38,3 +38,4 @@ pickle-email-*.html
 /vendor/bundle
 
 public/uploads/*
+.env
