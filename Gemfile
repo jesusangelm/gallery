@@ -20,6 +20,9 @@ gem 'carrierwave', '~> 0.10.0'
 gem 'fog', '~> 1.28.0'
 gem 'masonry-rails', '~> 0.2.4'
 
+gem 'rails_12factor', '~> 0.0.3', group: :production
+gem 'foreman', '~> 0.77.0'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
