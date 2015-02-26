@@ -7,7 +7,7 @@ class CategoriesController < ApplicationController
   end
 
   def show
-    @pictures = @category.pictures
+    @pictures = @category.pictures.order("created_at DESC")
   end
 
   private

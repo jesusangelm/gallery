@@ -2,7 +2,7 @@
   .col-md-8.col-md-offset-2
     .panel.panel-default
       .panel-heading.pin_image
-        = image_tag @picture.image.url
+        = image_tag @picture.image.url(:big)
       .panel-body
         h1 = @picture.title
         p.description = @picture.desc
