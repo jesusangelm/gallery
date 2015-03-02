@@ -195,6 +195,8 @@ GEM
     formtastic_i18n (0.1.1)
     globalid (0.3.3)
       activesupport (>= 4.1.0)
+    gretel (3.0.8)
+      rails (>= 3.2.0)
     has_scope (0.6.0)
       actionpack (>= 3.2, < 5)
       activesupport (>= 3.2, < 5)
@@ -346,6 +348,7 @@ DEPENDENCIES
   dotenv-rails (~> 1.0.2)
   fog (~> 1.28.0)
   foreman (~> 0.77.0)
+  gretel (~> 3.0.8)
   jquery-rails
   masonry-rails (~> 0.2.4)
   mini_magick (~> 4.1.0)
