@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+#
+
+50.times do
+  Category.create({name: Faker::Lorem.words(2).join(' '), desc: Faker::Lorem.paragraph(3, true, 4)})
+end

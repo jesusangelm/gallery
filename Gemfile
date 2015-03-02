@@ -20,6 +20,8 @@ gem 'fog', '~> 1.28.0'
 gem 'mini_magick', '~> 4.1.0'
 gem 'masonry-rails', '~> 0.2.4'
 gem 'gretel', '~> 3.0.8'
+gem 'faker', '~> 1.4.3'
+gem 'kaminari', '~> 0.16.3'
 
 gem 'rails_12factor', '~> 0.0.3', group: :production
 gem 'foreman', '~> 0.77.0'

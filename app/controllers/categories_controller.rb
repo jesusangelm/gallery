@@ -3,7 +3,7 @@ class CategoriesController < ApplicationController
   before_action :search_category, only: :show
 
   def index
-    @categories = Category.all.order("created_at DESC")
+    @categories = Category.order(created_at: :desc).page(params[:page]).per(10)
   end
 
   def show
