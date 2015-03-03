@@ -16,8 +16,9 @@ html
         = content_tag :div, msg, class: "alert alert-info"
 
     .container
-      = breadcrumbs pretext: "Estas en: ", display_single_fragment: true, style: :bootstrap
-
-    .container
+      == breadcrumbs pretext: "Estas en: ",
+                    display_single_fragment: true,
+                    style: :bootstrap,
+                    link_current: true
       = yield
 
