@@ -7,7 +7,7 @@
         = image_tag @picture.image.url(:big)
       .panel-body
         h1 = @picture.title.titleize
-        p.description = @picture.desc
+        = sanitize(Kramdown::Document.new(@picture.desc).to_html)
       .panel-footer
         .row
           .col-md-6
