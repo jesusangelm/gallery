@@ -1,6 +1,7 @@
 - breadcrumb :root
 
 h1 Categoria de Imagenes
+= paginate @categories
 #pins.transitions-enabled
   - @categories.each do |category|
     .box.panel.panel-default
@@ -9,7 +10,7 @@ h1 Categoria de Imagenes
       - else
         p= link_to (image_tag category.pictures.last.image.url(:min)), category
       .panel-body
-        h2= link_to category.name, category
+        h2= link_to category.name.titleize, category
         p.user
           | Descripcion:
           = category.desc

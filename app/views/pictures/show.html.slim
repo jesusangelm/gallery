@@ -6,7 +6,7 @@
       .panel-heading.pin_image
         = image_tag @picture.image.url(:big)
       .panel-body
-        h1 = @picture.title
+        h1 = @picture.title.titleize
         p.description = @picture.desc
       .panel-footer
         .row

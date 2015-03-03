@@ -1,13 +1,14 @@
 - breadcrumb :category, @category
 
+= paginate @pictures
 #pins.transitions-enabled
   - @pictures.each do |picture|
     .box.panel.panel-default
       = link_to (image_tag picture.image.url(:min)), category_picture_path(@category, picture)
       .panel-body
-        h2= link_to picture.title, category_picture_path(@category, picture)
+        h2= link_to picture.title.titleize, category_picture_path(@category, picture)
         p.user
           | Descripcion:
           = picture.desc
 
-
+= paginate @pictures

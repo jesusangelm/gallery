@@ -7,7 +7,7 @@ class CategoriesController < ApplicationController
   end
 
   def show
-    @pictures = @category.pictures.order("created_at DESC")
+    @pictures = @category.pictures.order(created_at: :desc).page(params[:page]).per(10)
   end
 
   private
