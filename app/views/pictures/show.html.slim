@@ -6,8 +6,8 @@
       .panel-heading.pin_image
         = image_tag @picture.image.url(:big)
       .panel-body
-        h1 = @picture.title.titleize
-        = sanitize(Kramdown::Document.new(@picture.desc).to_html)
+        h1.text-center = @picture.title.titleize
+        = to_markdown(@picture.desc)
       .panel-footer
         .row
           .col-md-6
