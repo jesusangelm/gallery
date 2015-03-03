@@ -12,10 +12,10 @@ h1 Categoria de Imagenes
       .panel-body
         h2= link_to category.name.titleize, category
         p.user
-          | Descripcion:
+          | Descripcion: 
           = category.desc
           br
-          | Imagenes:
+          | Imagenes: 
           = category.pictures.count
 
 = paginate @categories
