@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/activeadmin/activeadmin.git
-  revision: 97bf84a405077364dc89bf3ec5ee368f226fe9c2
+  revision: 8bd8ff07d73806e8c5dba0abeb112936de135748
   specs:
     activeadmin (1.0.0.pre)
       arbre (~> 1.0, >= 1.0.2)
@@ -131,7 +131,7 @@ GEM
     fog-atmos (0.1.0)
       fog-core
       fog-xml
-    fog-aws (0.1.0)
+    fog-aws (0.1.1)
       fog-core (~> 1.27)
       fog-json (~> 1.0)
       fog-xml (~> 0.1)
@@ -293,8 +293,8 @@ GEM
       polyamorous (~> 1.1)
     responders (2.1.0)
       railties (>= 4.2.0, < 5)
-    sass (3.4.12)
-    sass-rails (5.0.1)
+    sass (3.4.13)
+    sass-rails (5.0.0)
       railties (>= 4.0.0, < 5.0)
       sass (~> 3.1)
       sprockets (>= 2.8, < 4.0)
@@ -310,7 +310,7 @@ GEM
       railties (>= 3.1, < 5.0)
       slim (~> 3.0)
     slop (3.6.0)
-    spring (1.3.2)
+    spring (1.3.3)
     sprockets (2.12.3)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -326,15 +326,15 @@ GEM
     tilt (1.4.1)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    uglifier (2.7.0)
+    uglifier (2.7.1)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
     warden (1.2.3)
       rack (>= 1.0)
-    web-console (2.0.0)
-      activemodel (~> 4.0)
+    web-console (2.1.0)
+      activemodel (>= 4.0)
       binding_of_caller (>= 0.7.2)
-      railties (~> 4.0)
+      railties (>= 4.0)
       sprockets-rails (>= 2.0, < 4.0)
 
 PLATFORMS
