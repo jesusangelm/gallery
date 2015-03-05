@@ -1,5 +1,6 @@
 - breadcrumb :category, @category
 
+h1.text-center.titulo= "Imagenes de #{@category.name}"
 = paginate @pictures
 #pins.transitions-enabled
   - @pictures.each do |picture|

@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .jumbotron{
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
+  box-shadow: 0 3px 10px 0 rgba(106, 60, 150, 1);
   a {
     color: #7C24C2;
     font-weight: bold;
@@ -113,10 +113,13 @@ h1, h2, h3, h4, h5, h6 {
   color: #602F88;
   text-align: center;
   background-color: #EFEFEF;
-  border-top: 1px solid #D0D0D0;
+  box-shadow: 0 -3px 10px 0 rgba(87, 87, 181, 1);
 }
 p {
-  text-shadow: rgb(255, 255, 255) 0px 1px 1px
+  text-shadow: rgb(255, 255, 255) 0px 1px 1px;
 }
 
-
+.titulo {
+  color: #FFF;
+  text-shadow: rgb(108, 58, 147) 2px 2px 2px;
+}
