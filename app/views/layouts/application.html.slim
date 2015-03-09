@@ -8,8 +8,10 @@ html
   body
     .jumbotron
       .container
-        h1 = link_to "ArtesaniaSory", root_path
-        p Manualidades, Tejidos, Lencería y mucho más...
+        .img_titulo = image_tag "artesory.png", size: "200x250"
+        .container.banner
+          h1 = link_to "ArtesaniaSory", root_path
+          p Manualidades, Tejidos, Lencería y mucho más...
 
     .container
       - flash.each do |name, msg|
