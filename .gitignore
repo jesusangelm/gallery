@@ -38,4 +38,5 @@ pickle-email-*.html
 /vendor/bundle
 
 public/uploads/*
+public/assets
 .env
