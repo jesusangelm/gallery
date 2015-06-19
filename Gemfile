@@ -22,7 +22,9 @@ gem 'gretel', '~> 3.0.8'
 gem 'faker', '~> 1.4.3'
 gem 'kaminari', '~> 0.16.3'
 gem 'kramdown', '~> 1.7.0'
-
+gem 'pry-rails', '~> 0.3.4', group: :development
+gem 'quiet_assets', '~> 1.1.0', group: :development
+gem 'rails_12factor', group: :production
 gem 'foreman', '~> 0.78.0'
 
 group :development, :test do
@@ -36,8 +38,3 @@ group :development, :test do
   gem 'spring'
 end
 
-group :development do
-  gem 'pry-rails', '~> 0.3.3'
-  gem 'dotenv-rails', '~> 1.0.2'
-  gem 'quiet_assets', '~> 1.1.0'
-end
